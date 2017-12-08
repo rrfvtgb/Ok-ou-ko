@@ -1,0 +1,1 @@
+le fichier .apk est dans le dossier myApplication3\app\release\app-release.apk

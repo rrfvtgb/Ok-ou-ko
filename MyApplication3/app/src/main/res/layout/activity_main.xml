@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.julien.myapplication.MainActivity"
+    tools:context2="com.example.julien.myapplication.JavaApplication4"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnbas"
+        app:layout_constraintEnd_toStartOf="@+id/btndroi"
+        app:layout_constraintStart_toEndOf="@+id/btngau"
+        app:layout_constraintTop_toBottomOf="@+id/btnhau" />
+
+
+    <Button
+        android:id="@+id/btngau"
+        android:layout_width="81dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="12dp"
+        android:text="K.O"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <Button
+        android:id="@+id/btnhau"
+        android:layout_width="204dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:text="HORS SUJET"
+        app:layout_constraintBottom_toTopOf="@+id/code"
+        app:layout_constraintEnd_toStartOf="@+id/btndroi"
+        app:layout_constraintStart_toStartOf="@+id/code"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndroi"
+        android:layout_width="87dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="8dp"
+        android:text="O.K"
+        app:layout_constraintBottom_toBottomOf="@+id/btnbas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/code"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnbas"
+        android:layout_width="193dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="6dp"
+        android:text="ERREUR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+
+</android.support.constraint.ConstraintLayout>
